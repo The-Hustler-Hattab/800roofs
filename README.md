@@ -49,4 +49,6 @@ The repository is `The-Hustler-Hattab/800roofs`. Set the custom domain and confi
 
 ## Images and performance
 
+The Our Work page also includes six owner-supplied examples of roof damage Kevin can fix, under `#roof-problems`. These show exposed decking with broken boards, splits, and gaps; they are not paired with replacement photos as before-and-after projects. Captions describe visible conditions without attributing a cause.
+
 `public/images/roofing.webp` is a locally stored, compressed 1600-pixel stock photo from the [Unsplash image CDN](https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1600&q=80&fm=webp). It is illustrative, not Kevin’s project. Replace it with approved actual roofing photography when available. The hero is eagerly fetched, dimensions are supplied, fonts are system fonts, and no client JavaScript is shipped. Run a mobile Lighthouse audit against the deployed domain to verify actual Core Web Vitals; no performance score is claimed.

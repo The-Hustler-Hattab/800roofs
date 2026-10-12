@@ -2,9 +2,9 @@
 import Layout from '../layouts/Layout.astro';
 import ProjectPhoto from '../components/ProjectPhoto.astro';
 import CallButton from '../components/CallButton.astro';
-import { projectPhotos } from '../config/projects';
+import { projectPhotos, roofProblemPhotos } from '../config/projects';
 ---
-<Layout title="Our Work | Kevin’s Roof Replacement Gallery | Mutual Builders Corporation" description="Explore real photographs of roofs replaced by Kevin, from architectural shingles and rooflines to ridge caps and chimney flashing.">
+<Layout title="Our Work | Roof Replacements & Damage Kevin Can Fix | Mutual Builders Corporation" description="Explore Kevin’s roof replacement photos and examples of roof damage he can fix, including broken decking, split boards, and gaps.">
   <section class="page-intro wrap">
     <div class="eyebrow">OUR WORK</div>
     <h1>The difference is<br/>in the details.</h1>
@@ -13,6 +13,15 @@ import { projectPhotos } from '../config/projects';
   <section class="wrap project-gallery" aria-label="Kevin’s roof replacement photos">
     <p class="gallery-note">Photos supplied by Kevin. Some were taken during installation. Select a photo to see the full view.</p>
     <div class="project-grid photo-grid">{projectPhotos.map(photo => <ProjectPhoto photo={photo}/>)}</div>
+  </section>
+  <section id="roof-problems" class="section roof-problems" aria-labelledby="roof-problems-heading">
+    <div class="wrap">
+      <div class="section-heading">
+        <div><div class="eyebrow">ROOF PROBLEMS KEVIN CAN FIX</div><h2 id="roof-problems-heading">A closer look<br/>beneath the shingles.</h2></div>
+        <p>Broken boards, splits, and openings in the roof deck. These photos show examples of roof damage Kevin can address. Talk with him about your roof’s condition and the work it needs.</p>
+      </div>
+      <div class="project-grid photo-grid">{roofProblemPhotos.map(photo => <ProjectPhoto photo={photo}/>)}</div>
+    </div>
   </section>
   <section class="cta"><div class="wrap"><div><div class="eyebrow">YOUR HOME COULD BE NEXT</div><h2>Let’s talk about your roof.</h2><p>Discuss your roofing project with Kevin.</p></div><CallButton/></div></section>
 </Layout>
