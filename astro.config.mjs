@@ -9,7 +9,7 @@ export default defineConfig({
   base,
   trailingSlash: 'always',
   output: 'static',
-  integrations: [sitemap({ serialize(item) {
+  integrations: [sitemap({ filter: page => !/\/services\/(roof-repair|roof-replacement|roof-inspection)\/$/.test(page), serialize(item) {
     const url = new URL(item.url);
     if (prefix && url.pathname.startsWith(`${prefix}/`)) url.pathname = url.pathname.slice(prefix.length);
     return { ...item, url: url.href };

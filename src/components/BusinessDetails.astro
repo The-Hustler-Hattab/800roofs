@@ -1,0 +1,7 @@
+---
+import { business } from '../config/business';
+---
+<div class="business-details">
+  <div><strong>Pennsylvania HIC No. {business.hicNumber}</strong><p><a class="text-link" href={business.hicVerificationUrl}>Verify registration with Pennsylvania →</a></p><p class="detail-note">Search for {business.hicNumber} in the Pennsylvania Office of Attorney General’s contractor search. Enter 010376 if the field already shows “PA”.</p></div>
+  {business.financingAvailable && <div><strong>Financing available</strong><p>Ask Kevin about current financing options for your project.</p><p class="detail-note">Discuss eligibility, rates, fees, and repayment terms directly with Kevin before deciding.</p></div>}
+</div>

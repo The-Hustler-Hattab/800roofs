@@ -10,6 +10,11 @@ function walk(dir) {
 const pages = walk('dist').filter(file => file.endsWith('.html'));
 for (const file of pages) {
   const html = readFileSync(file, 'utf8');
+  // Astro emits small static redirect pages for the former roofing URLs.
+  if (html.includes('http-equiv="refresh"')) {
+    assert(html.includes(`${prefix}/services/roofing/`), `Invalid legacy redirect: ${file}`);
+    continue;
+  }
   const canonical = html.match(/rel="canonical" href="([^"]+)"/)?.[1];
   assert(canonical?.startsWith('https://800roofs.com/'), `Invalid canonical: ${file}`);
   assert(!canonical.startsWith(`https://800roofs.com${prefix}/`) || !prefix, `Preview path in canonical: ${file}`);

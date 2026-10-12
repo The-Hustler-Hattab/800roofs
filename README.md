@@ -1,6 +1,8 @@
 # Mutual Builders Corporation · 800Roofs.com
 
-The website for Mutual Builders Corporation, owned by Kevin, serving Pittsburgh, Pennsylvania only. Phone: (412) 478-6526. Company history supplied by the owner: over 70 years in business; no exact founding date has been provided.
+The website for Mutual Builders Corporation, owned by Kevin, serving Pittsburgh, Pennsylvania only. Phone: (412) 478-6526. Pennsylvania HIC No. PA010376 and financing availability are supplied by the owner. Customers can check registration at https://hicsearch.attorneygeneral.gov/ (enter 010376 if PA is already shown). No active-status claim or financing rates, lenders, or approval promises are made.
+
+Company history supplied by the owner: over 70 years in business; no exact founding date has been provided.
 
 A mobile-first Astro + TypeScript + Tailwind CSS website. All routes build to static HTML. No backend, forms, database, authentication, analytics, or runtime JavaScript is required.
 
@@ -23,7 +25,7 @@ Edit `src/config/business.ts`, the single source for Kevin’s phone number and 
 
 - Set `phone` to Kevin’s verified international-format number and `phoneDisplay` to its readable version. Header, homepage, footer, mobile CTA, contact page, and JSON-LD will update together. Until then, Call Now links open the clearly labeled contact placeholder; no fake number is dialed.
 - The confirmed service area is Pittsburgh, Pennsylvania only. Add only confirmed cities to `cities` and an actual business address to `address` if appropriate for public display. Do not publish private address information accidentally.
-- Confirm the proposed repair, replacement, and inspection offerings. Remove unoffered services from the configuration, revise their descriptions and the services page metadata, and remove the awaiting-confirmation notices only after verification. These are distinct educational draft pages, not verified offerings.
+- Confirmed core services are complete roofing, siding, and gutters. Edit their content in `src/config/business.ts`; the homepage, service list, individual service pages, and structured data share that configuration. Former repair, replacement, and inspection URLs redirect to the complete roofing page.
 - Replace project placeholders in `src/pages/projects.astro` and `src/pages/index.astro` with matching before-and-after photographs, verified descriptions, and permission to publish. Supply dimensions, useful alt text, and lazy loading for below-the-fold photos.
 - Add verified biography and business details to the About and Contact pages. There are no invented credentials, reviews, warranties, or founding dates.
 
