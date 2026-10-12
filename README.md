@@ -1,4 +1,6 @@
-# 800Roofs.com
+# Mutual Builders Corporation · 800Roofs.com
+
+The website for Mutual Builders Corporation, owned by Kevin, serving Pittsburgh, Pennsylvania only. Phone: (412) 478-6526. Company history supplied by the owner: over 70 years in business; no exact founding date has been provided.
 
 A mobile-first Astro + TypeScript + Tailwind CSS website. All routes build to static HTML. No backend, forms, database, authentication, analytics, or runtime JavaScript is required.
 
@@ -23,9 +25,9 @@ Edit `src/config/business.ts`, the single source for Kevin’s phone number and 
 - The confirmed service area is Pittsburgh, Pennsylvania only. Add only confirmed cities to `cities` and an actual business address to `address` if appropriate for public display. Do not publish private address information accidentally.
 - Confirm the proposed repair, replacement, and inspection offerings. Remove unoffered services from the configuration, revise their descriptions and the services page metadata, and remove the awaiting-confirmation notices only after verification. These are distinct educational draft pages, not verified offerings.
 - Replace project placeholders in `src/pages/projects.astro` and `src/pages/index.astro` with matching before-and-after photographs, verified descriptions, and permission to publish. Supply dimensions, useful alt text, and lazy loading for below-the-fold photos.
-- Add verified biography and business details to the About and Contact pages. There are no invented credentials, reviews, warranties, or service history.
+- Add verified biography and business details to the About and Contact pages. There are no invented credentials, reviews, warranties, or founding dates.
 
-RoofingContractor JSON-LD includes only the supplied name and URL by default. Phone, address, and cities are included when configured; no ratings, credentials, or opening hours are fabricated. Search engines may require more verified fields for enhanced results.
+RoofingContractor JSON-LD includes the supplied company name, URL, phone, company-history description, and Pittsburgh service area. Phone, address, and cities are included when configured; no ratings, credentials, or opening hours are fabricated. Search engines may require more verified fields for enhanced results.
 
 The service-area page lists confirmed cities once in a useful context rather than creating duplicate city landing pages. Each page has a unique title, description, and canonical. The sitemap integration generates `sitemap-index.xml` and `sitemap-0.xml`; `robots.txt` references the index.
 

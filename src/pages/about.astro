@@ -1,5 +1,9 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import CallButton from '../components/CallButton.astro';
+import { business } from '../config/business';
 ---
-<Layout title="About Kevin & 800Roofs.com | Local Roofing Company" description="800Roofs.com is a local roofing company owned by Kevin, serving Pittsburgh, Pennsylvania only. Learn about the company and start a conversation about your roofing needs."><section class="page-intro wrap"><div class="eyebrow">ABOUT 800ROOFS.COM</div><h1>A local company.<br/>A name you can talk to.</h1></section><article class="wrap content"><p>800Roofs.com is a local roofing company owned by Kevin, serving Pittsburgh, Pennsylvania only.</p><p>Whether you’re trying to understand an issue or planning your next roofing project, start by discussing your property and questions with Kevin.</p><p class="notice">Company biography, business address, service history, licenses, certifications, and insurance information have not been provided. Verified details will be added here when supplied.</p><CallButton/></article></Layout>
+<Layout title={`About Kevin | ${business.name}`} description="Mutual Builders Corporation is owned by Kevin and has been in business for over 70 years. Serving Pittsburgh, Pennsylvania only.">
+  <section class="page-intro wrap"><div class="eyebrow">ABOUT {business.name}</div><h1>A local company.<br/>A name you can talk to.</h1></section>
+  <article class="wrap content"><p>{business.name} is a local roofing company owned by Kevin, serving Pittsburgh, Pennsylvania only.</p><h2>{business.history}.</h2><p>With over 70 years in business, Mutual Builders Corporation brings a long company history to the conversation about your roof.</p><p>Whether you’re trying to understand an issue or planning your next roofing project, start by discussing your property and questions with Kevin.</p><p class="notice">Business address, licenses, certifications, and insurance information are awaiting confirmation.</p><CallButton/></article>
+</Layout>
