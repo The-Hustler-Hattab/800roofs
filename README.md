@@ -13,7 +13,7 @@ npm run build
 npm run preview
 ```
 
-`npm run build` checks Astro/TypeScript and generates `dist/`. The production URL is `https://800roofs.com` with no repository base path.
+`npm run build` checks Astro/TypeScript and generates `dist/`. The production URL is `https://800roofs.com` with no repository base path by default. GitHub Actions reads the configured Pages base path before building, so the temporary `https://the-hustler-hattab.github.io/800roofs/` URL also loads styles, images, and navigation correctly. After setting the custom domain, rerun the deployment so the base path returns to `/`. Canonicals and sitemap page URLs always target `https://800roofs.com`.
 
 ## Confirm business information before launching
 
@@ -41,7 +41,7 @@ The service-area page lists confirmed cities once in a useful context rather tha
 
 Official guides: [Custom domain DNS](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site), [HTTPS](https://docs.github.com/en/pages/getting-started-with-github-pages/securing-your-github-pages-site-with-https), [Domain verification](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/verifying-your-custom-domain-for-github-pages).
 
-This workspace has no configured GitHub remote. The workflow is prepared; repository creation/push and DNS configuration are still required for a live deployment.
+The repository is `The-Hustler-Hattab/800roofs`. Set the custom domain and configure DNS for the production URL; repository Pages hosting can also be used while DNS is being prepared.
 
 ## Images and performance
 

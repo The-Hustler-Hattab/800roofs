@@ -1,6 +1,7 @@
 ---
+import { sitePath } from '../utils/paths';
 import { business } from '../config/business';
 interface Props { class?: string; compact?: boolean }
 const { class: className = '', compact = false } = Astro.props;
 ---
-{business.phone ? <a class={`button ${className}`} href={`tel:${business.phone}`} aria-label={`Call Kevin at ${business.phoneDisplay || business.phone}`}>↗ {compact ? 'Call Now' : 'Call Kevin'} · {business.phoneDisplay || business.phone}</a> : <a class={`button ${className}`} href="/contact/">↗ Call Now <span class="pending">Number pending</span></a>}
+{business.phone ? <a class={`button ${className}`} href={`tel:${business.phone}`} aria-label={`Call Kevin at ${business.phoneDisplay || business.phone}`}>↗ {compact ? 'Call Now' : 'Call Kevin'} · {business.phoneDisplay || business.phone}</a> : <a class={`button ${className}`} href={sitePath('/contact/')}>↗ Call Now <span class="pending">Number pending</span></a>}

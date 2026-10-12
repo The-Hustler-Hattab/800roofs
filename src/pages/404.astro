@@ -1,4 +1,5 @@
 ---
+import { sitePath } from '../utils/paths';
 import Layout from '../layouts/Layout.astro';
 ---
-<Layout title="Page Not Found | 800Roofs.com" description="This page could not be found. Return to the 800Roofs.com homepage."><section class="section wrap"><div class="eyebrow">404</div><h1>Let’s get you home.</h1><a class="button" href="/">Back to the homepage →</a></section></Layout>
+<Layout title="Page Not Found | 800Roofs.com" description="This page could not be found. Return to the 800Roofs.com homepage."><section class="section wrap"><div class="eyebrow">404</div><h1>Let’s get you home.</h1><a class="button" href={sitePath('/')}>Back to the homepage →</a></section></Layout>
