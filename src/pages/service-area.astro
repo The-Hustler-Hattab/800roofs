@@ -1,0 +1,9 @@
+---
+import Layout from '../layouts/Layout.astro';
+import CallButton from '../components/CallButton.astro';
+import { business } from '../config/business';
+---
+<Layout title="Pittsburgh, PA Roofing Service Area | 800Roofs.com" description="800Roofs.com serves Pittsburgh, Pennsylvania only. Contact Kevin to discuss your Pittsburgh property and confirm available roofing services.">
+  <section class="page-intro wrap"><div class="eyebrow">PITTSBURGH ROOFING</div><h1>Roofing for<br/>Pittsburgh homes.</h1><p class="lede">Kevin’s service area is Pittsburgh, Pennsylvania only.</p></section>
+  <article class="wrap content"><h2>Our service area</h2><ul>{business.cities.map(city => <li>{city}</li>)}</ul><p>Have a property in Pittsburgh? Share its location and describe your roofing question when you call Kevin. Discuss the roof’s condition, any visible damage, and the next steps for your property.</p><p>Contact Kevin to confirm which roofing services are available and discuss your project.</p><CallButton/></article>
+</Layout>

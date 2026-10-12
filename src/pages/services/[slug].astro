@@ -1,0 +1,8 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import CallButton from '../../components/CallButton.astro';
+import { services } from '../../config/business';
+export function getStaticPaths() { return services.map(service => ({ params: { slug: service.slug }, props: { service } })); }
+const { service } = Astro.props;
+---
+<Layout title={`${service.title} | 800Roofs.com`} description={service.description}><section class="page-intro wrap"><div class="eyebrow">{service.title}</div><h1>{service.intro}</h1><p class="notice">Proposed service — awaiting Kevin’s confirmation. This page explains general roofing considerations; confirm availability directly.</p></section><article class="wrap content"><p>{service.detail}</p><h2>Topics to discuss with Kevin</h2><ul>{service.points.map(point=><li>{point}</li>)}</ul><h2>Plan your conversation</h2><p>Share your property’s location, the roofing material if known, and what prompted your call. Ask about service availability, assessment options, and the scope of any recommended work.</p><CallButton/><p><a class="text-link" href="/services/">← All roofing services</a></p></article></Layout>
