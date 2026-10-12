@@ -1,4 +1,18 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import ProjectPhoto from '../components/ProjectPhoto.astro';
+import CallButton from '../components/CallButton.astro';
+import { projectPhotos } from '../config/projects';
 ---
-<Layout title="Before & After Roofing Project Gallery | Mutual Builders Corporation" description="The Mutual Builders Corporation before-and-after gallery is awaiting verified project photographs and details from Kevin."><section class="page-intro wrap"><div class="eyebrow">PROJECT GALLERY</div><h1>See the whole picture.</h1><p class="lede">Before-and-after project photography will appear here once Kevin provides matching images and verified project details.</p></section><section class="wrap content"><div class="project-grid"><div class="project-placeholder"><b>Before · placeholder</b><span>Original roof photo pending</span></div><div class="project-placeholder"><b>After · placeholder</b><span>Completed roof photo pending</span></div></div><p class="notice">Project location, materials, scope, dates, and photo permissions are awaiting verification. These placeholders do not represent actual work.</p></section></Layout>
+<Layout title="Our Work | Kevin’s Roof Replacement Gallery | Mutual Builders Corporation" description="Explore real photographs of roofs replaced by Kevin, from architectural shingles and rooflines to ridge caps and chimney flashing.">
+  <section class="page-intro wrap">
+    <div class="eyebrow">OUR WORK</div>
+    <h1>The difference is<br/>in the details.</h1>
+    <p class="lede">Real roofs. Real work by Kevin. Explore roof replacements from the broad rooflines to the details around ridges, dormers, and chimneys.</p>
+  </section>
+  <section class="wrap project-gallery" aria-label="Kevin’s roof replacement photos">
+    <p class="gallery-note">Photos supplied by Kevin. Some were taken during installation. Select a photo to see the full view.</p>
+    <div class="project-grid photo-grid">{projectPhotos.map(photo => <ProjectPhoto photo={photo}/>)}</div>
+  </section>
+  <section class="cta"><div class="wrap"><div><div class="eyebrow">YOUR HOME COULD BE NEXT</div><h2>Let’s talk about your roof.</h2><p>Discuss your roofing project with Kevin.</p></div><CallButton/></div></section>
+</Layout>

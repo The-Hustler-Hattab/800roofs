@@ -1,0 +1,14 @@
+---
+import { sitePath } from '../utils/paths';
+import { projectPhotos } from '../config/projects';
+interface Props { photo: (typeof projectPhotos)[number] }
+const { photo } = Astro.props;
+const imagePath = `/images/projects/${photo.slug}.webp`;
+---
+<figure class="project-photo">
+  <a class="project-photo-link" href={sitePath(imagePath)} target="_blank" rel="noopener" aria-label={`View full photo: ${photo.title} (opens in a new tab)`}>
+    <img src={sitePath(imagePath)} srcset={`${sitePath(`/images/projects/${photo.slug}-640.webp`)} 640w, ${sitePath(imagePath)} ${photo.width}w`} sizes="(max-width: 650px) calc(100vw - 36px), (max-width: 1000px) calc((100vw - 60px) / 2), 384px" width={photo.width} height={photo.height} alt={photo.alt} loading="lazy" decoding="async"/>
+    <span class="project-photo-action" aria-hidden="true">View photo ↗</span>
+  </a>
+  <figcaption><h3>{photo.title}</h3><p>{photo.detail}</p></figcaption>
+</figure>
