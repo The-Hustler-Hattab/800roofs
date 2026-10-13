@@ -1,6 +1,6 @@
 # Mutual Builders Corporation · 800Roofs.com
 
-The website for Mutual Builders Corporation, owned by Kevin, serving Pittsburgh, Pennsylvania only. Phone: (412) 478-6526. Pennsylvania HIC No. PA010376 and financing availability are supplied by the owner. Customers can check registration at https://hicsearch.attorneygeneral.gov/ (enter 010376 if PA is already shown). No active-status claim or financing rates, lenders, or approval promises are made.
+The website for Mutual Builders Corporation, owned by Kevin, serving Pittsburgh, Pennsylvania only. Phone: (412) 478-6526. Email: MutuAl@nb.net. Pennsylvania HIC No. PA010376 and financing availability are supplied by the owner. Customers can check registration at https://hicsearch.attorneygeneral.gov/ (enter 010376 if PA is already shown). No active-status claim or financing rates, lenders, or approval promises are made.
 
 Company history supplied by the owner: over 70 years in business; no exact founding date has been provided.
 

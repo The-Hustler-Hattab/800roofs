@@ -3,6 +3,7 @@ export const business = {
   name: 'Mutual Builders Corporation', owner: 'Kevin', url: 'https://800roofs.com',
   phone: '+14124786526' as string | null,
   phoneDisplay: '(412) 478-6526' as string | null,
+  email: 'MutuAl@nb.net',
   history: 'Over 70 years in business', // Supplied by owner; no exact founding year provided.
   hicNumber: 'PA010376',
   hicVerificationUrl: 'https://hicsearch.attorneygeneral.gov/',
