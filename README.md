@@ -1,6 +1,6 @@
 # Mutual Builders Corporation · 800Roofs.com
 
-The website for Mutual Builders Corporation, owned by Kevin, serving Pittsburgh, Pennsylvania only. Phone: (412) 478-6526. Email: MutuAl@nb.net. Pennsylvania HIC No. PA010376 and financing availability are supplied by the owner. Customers can check registration at https://hicsearch.attorneygeneral.gov/ (enter 010376 if PA is already shown). No active-status claim or financing rates, lenders, or approval promises are made.
+The website for Mutual Builders Corporation, owned by Kevin, serving Pittsburgh, Pennsylvania and surrounding areas. Phone: (412) 478-6526. Email: MutuAl@nb.net. Pennsylvania HIC No. PA010376 and financing availability are supplied by the owner. Customers can check registration at https://hicsearch.attorneygeneral.gov/ (enter 010376 if PA is already shown). No active-status claim or financing rates, lenders, or approval promises are made.
 
 Company history supplied by the owner: over 70 years in business; no exact founding date has been provided.
 
@@ -24,14 +24,14 @@ npm run preview
 Edit `src/config/business.ts`, the single source for Kevin’s phone number and business details.
 
 - Set `phone` to Kevin’s verified international-format number and `phoneDisplay` to its readable version. Header, homepage, footer, mobile CTA, contact page, and JSON-LD will update together. Until then, Call Now links open the clearly labeled contact placeholder; no fake number is dialed.
-- The confirmed service area is Pittsburgh, Pennsylvania only. Add only confirmed cities to `cities` and an actual business address to `address` if appropriate for public display. Do not publish private address information accidentally.
+- The confirmed service area is Pittsburgh, Pennsylvania and surrounding areas, stored in `serviceArea`. Add specific towns or a service radius only when confirmed. Add an actual business address to `address` if appropriate for public display. Do not publish private address information accidentally.
 - Confirmed core services are complete roofing, siding, and gutters. Edit their content in `src/config/business.ts`; the homepage, service list, individual service pages, and structured data share that configuration. Former repair, replacement, and inspection URLs redirect to the complete roofing page.
 - Kevin's supplied roof replacement photographs appear in Our Work (`src/pages/projects.astro`) and in the homepage preview. The shared selection and factual captions live in `src/config/projects.ts`; responsive WebP files live in `public/images/projects/`. Some images show installation underway. No before-and-after pairing, dates, product brands, or project addresses are inferred.
 - Add verified biography and business details to the About and Contact pages. There are no invented credentials, reviews, warranties, or founding dates.
 
-RoofingContractor JSON-LD includes the supplied company name, URL, phone, company-history description, and Pittsburgh service area. Phone, address, and cities are included when configured; no ratings, credentials, or opening hours are fabricated. Search engines may require more verified fields for enhanced results.
+RoofingContractor JSON-LD includes the supplied company name, URL, phone, company-history description, and Pittsburgh and surrounding areas service area. Phone and address are included when configured; no ratings, credentials, or opening hours are fabricated. Search engines may require more verified fields for enhanced results.
 
-The service-area page lists confirmed cities once in a useful context rather than creating duplicate city landing pages. Each page has a unique title, description, and canonical. The sitemap integration generates `sitemap-index.xml` and `sitemap-0.xml`; `robots.txt` references the index.
+The service-area page describes the confirmed service area and invites customers to confirm coverage for their address rather than creating duplicate city landing pages. Each page has a unique title, description, and canonical. The sitemap integration generates `sitemap-index.xml` and `sitemap-0.xml`; `robots.txt` references the index.
 
 ## GitHub Pages deployment
 
